@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "nodemon server.js",
+    "start-as-build": "vue-cli-service build && npx http-server dist",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -26,7 +26,6 @@
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
     "node-sass": "^4.12.0",
-    "nodemon": "^2.0.15",
     "sass": "~1.32.0",
     "sass-loader": "^10",
     "vue-cli-plugin-vuetify": "~2.4.5",
