@@ -1,16 +1,16 @@
 <template>
   <v-container fluid>
     <h1 class="text-center">Score some points!</h1>
-    <speed-dial-actions/>
+    <new-championship/>
   </v-container>
 </template>
 
 <script>
-import SpeedDialActions from '@/components/SpeedDialActions.vue';
+import NewChampionship from '../components/NewChampionship.vue';
 
 export default {
   name: 'Home',
-  components: { SpeedDialActions },
+  components: { NewChampionship },
 };
 </script>
 
