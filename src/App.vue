@@ -1,20 +1,19 @@
 <template>
   <v-app id="app">
-    <app-bar></app-bar>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <app-bar/>
     <router-view/>
+    <bottom-navigation/>
   </v-app>
 </template>
 
 <script>
 import AppBar from '@/components/AppBar.vue';
+import BottomNavigation from './components/BottomNavigation.vue';
 
 export default {
   components: {
     AppBar,
+    BottomNavigation,
   },
 };
 </script>
