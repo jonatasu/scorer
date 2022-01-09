@@ -43,14 +43,14 @@
                 <v-list-item-title>Início</v-list-item-title>
               </v-list-item>
 
-              <v-list-item :to="{ name: 'Home' }">
+              <v-list-item :to="{ name: 'Profile' }">
                 <v-list-item-icon>
                   <v-icon>mdi-account</v-icon>
                 </v-list-item-icon>
                 <v-list-item-title>Perfil</v-list-item-title>
               </v-list-item>
 
-              <v-list-item :to="{ name: 'Home' }">
+              <v-list-item :to="{ name: 'Privacy' }">
                 <v-list-item-icon>
                   <v-icon>mdi-shield-key</v-icon>
                 </v-list-item-icon>
@@ -69,6 +69,9 @@
                   <v-icon>mdi-email-send</v-icon>
                 </v-list-item-icon>
                 <v-list-item-title>Contato</v-list-item-title>
+                <v-list-item-icon small>
+                  <v-icon>mdi-open-in-new</v-icon>
+                </v-list-item-icon>
               </v-list-item>
 
               <v-divider />
@@ -98,7 +101,7 @@
               </v-btn>
             </v-list-item>
           </v-list>
-          </v-footer>
+        </v-footer>
       </v-layout>
     </v-navigation-drawer>
   </div>
