@@ -1,8 +1,8 @@
 <template>
   <v-app id="app">
-    <app-bar/>
-    <router-view/>
-    <bottom-navigation/>
+    <app-bar />
+    <router-view />
+    <bottom-navigation v-if="inChampionship" />
   </v-app>
 </template>
 
@@ -14,6 +14,11 @@ export default {
   components: {
     AppBar,
     BottomNavigation,
+  },
+  computed: {
+    inChampionship() {
+      return this.$route.path.includes('Championship');
+    },
   },
 };
 </script>
