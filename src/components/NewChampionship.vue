@@ -26,7 +26,7 @@
       </v-card-title>
 
       <v-card-text>
-        <h2 class="pt-6">Type the title of your new championship?</h2>
+        <h2 class="pt-6">Tournament title:</h2>
         <v-text-field :rules="newChampionshipRules"></v-text-field>
       </v-card-text>
 
